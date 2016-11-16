@@ -1,12 +1,13 @@
 module.exports = {
-    entry: './todo.component.js',
+    entry: './index.js',
     output: {
         path: './',
         filename: 'bundle.js'
     },
     devServer: {
         inline: true,
-        port: 3333
+        port: 3333,
+        historyApiFallback: true
     },
     module: {
         loaders: [
